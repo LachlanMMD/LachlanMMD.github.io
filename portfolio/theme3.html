@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme 3 • UX/UI</title>
+
+    <link rel="stylesheet" href="/css/mutual_styles.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/puv1dpz.css">
+
+
+</head>
+
+
+<body>
+
+    <div id="header"></div>
+
+
+
+    <main>
+
+        <section class="theme-intro">
+            <div class="container">
+
+                <h1>
+                    Theme 3 • UX/UI
+                </h1>
+
+                <p>
+                    Theme 3 introduced the full design process behind a website. For the first time, I was responsible
+                    not only for building
+                    a solution, but also for researching, planning and testing it before development began.
+
+                    The theme shifted my focus from learning technical skills to understanding how design decisions are
+                    made and evaluated.
+                </p>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="challenge">
+            <div class="container">
+
+                <div class="grid_theme">
+
+                    <img src="/imgs/imgs_03/03_challenge.webp" alt="">
+
+                    <div>
+                        <h2>Challenge</h2>
+                        <p>
+                            For this project I was tasked with designing and developing a website around a topic of
+                            my
+                            own choosing. I chose to
+                            create a website for CHIMAERA Collective, a creative community focused on events, music
+                            and
+                            artistic collaboration.
+
+                            Unlike previous projects, I was responsible for the entire process, from research and
+                            planning to design, testing and
+                            development. The challenge was creating a visual identity and user experience that
+                            reflected
+                            the collective’s creative
+                            nature while remaining clear and easy to navigate.
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section class="process">
+            <div class="container">
+
+                <div class="grid_theme">
+
+
+
+                    <div>
+                        <h2>Process</h2>
+                        <p>
+                            The project began with research into similar creative organisations and event focused
+                            websites. From there I developed
+                            moodboards, wireframes and a visual direction that matched the identity of CHIMAERA.
+
+                            Using Figma, I created a clickable prototype before moving into development.
+                        </p>
+
+                        <h3>User Testing</h3>
+
+                        <p>
+                            To evaluate the prototype I conducted informal user testing sessions throughout the whole
+                            process, using their feedback to make improvements to the design and overall user
+                            experience.
+                        </p>
+                    </div>
+                    <div class="mobile-preview">
+                        <img src="/imgs/imgs_03/03_process.png" alt="">
+                    </div>
+                </div>
+                <div class="process-gallery">
+
+                    <button class="gallery-toggle">
+                        View Additional Screenshots
+                    </button>
+
+
+
+                    <div class="gallery-content hidden">
+
+                        <img src="/imgs/imgs_03/03_ink.jpeg" alt="">
+                        <img src="/imgs/imgs_03/03_petra.jpg" alt="">
+                        <img src="/imgs/imgs_03/03_fimo.jpg" alt="">
+                        <img src="/imgs/imgs_03/03_ink-2.png" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="solution">
+            <div class="container">
+
+                <div class="grid_theme">
+
+                    <img src="/imgs/imgs_03/03_solution.png" alt="">
+
+                    <div>
+                        <h2>Solution</h2>
+                        <p>
+                            The final result was a fully designed and coded website for CHIMAERA Collective. The
+                            site
+                            included a custom visual
+                            identity, responsive layouts and interactive elements that supported the collective's
+                            focus
+                            on creativity and community.
+
+                            Compared to previous projects, this assignment required a much broader workflow that
+                            combined research, UX design,
+                            visual design, user testing and front end development within a single project.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="reflection">
+            <div class="container">
+
+                <h2>Reflection</h2>
+
+                <p>
+
+                </p>
+
+                <p>
+                    This website is still used by CHIMAERA Collective today, although it is due for an update.
+                    This project gave me my first experience managing an entire web design process from concept to
+                    implementation. One of
+                    the biggest lessons was learning how much time is spent making design decisions before any code
+                    is
+                    written. User testing
+                    also showed me that ideas which seem obvious to the me are not always obvious to users.
+                    If I revisited the project today, I would spend more time conducting user tests and looking at ways
+                    to better integrate the name "CHIMAERA", so it's pronuciation and meaning are more clear to users.
+
+
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <div class="website-link">
+            <p class="theme-label">
+                Theme 3 • UX/UI
+            </p>
+            <a href="https://chimaeracollective.dk/" target="_blank">See the website →</a>
+        </div>
+
+
+
+        <div class="next-project">
+            <p class="theme-label">
+                Theme 4 • Brugergrænsefladeudvikling
+            </p>
+            <a href="theme4.html">Next Project →</a>
+        </div>
+
+        <div id="footer"></div>
+    </main>
+
+    <script src="/js/main.js"></script>
+
+
+    <script>
+
+        fetch("/components/header.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+            });
+
+        fetch("/components/footer.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("footer").innerHTML = data;
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>

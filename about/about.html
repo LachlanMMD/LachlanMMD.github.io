@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="../css/mutual_styles.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/puv1dpz.css">
+
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+
+
+
+
+    <main>
+
+        <section class="theme-intro">
+            <div class="container">
+
+                <h1>About</h1>
+
+                <p>
+                    Designer, developer and creative project manager based in Copenhagen.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+
+                <div class="grid_theme">
+
+                    <img src="/imgs/introkort.png" alt="">
+
+                    <div>
+
+                        <h2>Who I Am</h2>
+
+                        <p>
+                            I’m a Multimedia Design student based in Copenhagen with an interest in web design,
+                            development and creative projects.
+                            Alongside my studies, I work with events, music and content production. I enjoy building
+                            digital experiences that
+                            combine thoughtful design with practical functionality.
+                        </p>
+
+                        <h2>Skills</h2>
+
+                        <p>
+                            HTML, CSS, JavaScript, Figma, Content Production
+                        </p>
+
+                        <h2>Interests</h2>
+
+                        <p>
+                            Events, music, design, cooking and community building.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <div id="footer"></div>
+
+    <script>
+
+        fetch("/components/header.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+            });
+
+        fetch("/components/footer.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("footer").innerHTML = data;
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>

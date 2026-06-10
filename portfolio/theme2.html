@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme 2 • GRUNDLÆGGENDE WEB</title>
+
+    <link rel="stylesheet" href="/css/mutual_styles.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/puv1dpz.css">
+
+</head>
+
+
+<body>
+
+    <div id="header"></div>
+
+
+
+    <main>
+
+        <section class="theme-intro">
+            <div class="container">
+
+                <h1>
+                    Theme 2 • GRUNDLÆGGENDE WEB
+                </h1>
+
+                <p>
+                    Theme 2 marked my first introduction to web development. Up until this point, I had very little
+                    experience working with
+                    code, making the theme an important foundation for the rest of the semester.
+
+                    Many of the concepts introduced here, such as page structure, styling and responsive layouts, became
+                    skills that I would
+                    continue developing throughout later projects.
+                </p>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="challenge">
+            <div class="container">
+
+                <div class="grid_theme">
+
+                    <img src="/imgs/imgs_02/02_opgformulering.png" alt="">
+
+                    <div>
+                        <h2>Challenge</h2>
+                        <p>
+                            The objective was to build a multi page website using HTML and CSS while applying layout
+                            systems, visual hierarchy and responsive design principles. The biggest challenge was
+                            translating desktop layouts to
+                            mobile view while maintaining usability and consistency across all five pages.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section class="process">
+            <div class="container">
+
+                <div class="grid_theme">
+
+
+
+                    <div>
+                        <h2>Process</h2>
+                        <p>
+                            The primary focus of this project was translating an existing design into a functioning
+                            website using HTML and CSS.
+                            Since the wireframes and visual direction were already provided, the challenge was
+                            understanding how to structure
+                            content in HTML and apply CSS to recreate the intended layouts.
+
+                            Through the development process, I learned how to work with HTML, organize files and assets,
+                            and use CSS for
+                            layout, spacing and typography. I also gained my first experience adapting a desktop design
+                            for smaller screens and
+                            understanding how different elements behave across devices.
+                        </p>
+                    </div>
+                    <div class="mobile-preview">
+                        <img src="/imgs/imgs_02/02_mobileview.png" alt="">
+                    </div>
+                </div>
+
+                <section class="process-gallery">
+
+                    <button class="gallery-toggle">
+                        View Additional Screenshots
+                    </button>
+
+
+
+                    <div class="gallery-content hidden">
+
+                        <img src="/imgs/imgs_02/02_1.png" alt="">
+                        <img src="/imgs/imgs_02/02_2.png" alt="">
+                        <img src="/imgs/imgs_02/02_3.png" alt="">
+                        <img src="/imgs/imgs_02/02_4.png" alt="">
+
+                    </div>
+
+                </section>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="solution">
+            <div class="container">
+
+                <div class="grid_theme">
+
+                    <img src="/imgs/imgs_02/02_2.png" alt="">
+
+                    <div>
+                        <h2>Solution</h2>
+                        <p>
+                            The finished result was a responsive multi page website built entirely with HTML and CSS.
+                            Through the project I learned
+                            the foundations of web development and gained practical experience translating a design into
+                            a functional website. This
+                            project provided the technical foundation for the more advanced projects completed later in
+                            the semester.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="reflection">
+            <div class="container">
+
+                <h2>Reflection</h2>
+
+                <p>
+                    This project taught me the fundamentals of HTML and CSS and gave me my first experience building a
+                    complete website.
+                    Looking back, many of the solutions are simple, and the navigation in mobile view is not complete.
+                    However, I am proud of the progress I made in learning the basics of web development and creating a
+                    functional website from scratch.
+                </p>
+
+                <p>
+                    If I were to redo this project, I would focus more on improving the mobile navigation, creating
+                    visual borders between the indivual section and grids, creating a hierarchy that better guides the
+                    viewer through the page.
+                </p>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="website-link">
+            <p class="theme-label">
+                Theme 2 • GRUNDLÆGGENDE WEB
+            </p>
+            <a href="https://lachlanmmd.github.io/mobilsite/" target="_blank">See the website →</a>
+        </section>
+
+
+
+        <section class="next-project">
+            <p class="theme-label">
+                Theme 3 • UX/UI
+            </p>
+            <a href="theme3.html">Next Project →</a>
+        </section>
+
+        <div id="footer"></div>
+    </main>
+
+
+
+    <script src="/js/main.js"></script>
+    <script>
+
+        fetch("/components/header.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+            });
+
+        fetch("/components/footer.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("footer").innerHTML = data;
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>

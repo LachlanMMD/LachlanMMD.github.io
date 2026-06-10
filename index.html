@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="/css/mutual_styles.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/puv1dpz.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+
+
+
+
+  <main>
+
+    <section class="container">
+      <div class="grid_content_1-1">
+        <img src="/imgs/lach_cook_alice.jpg" alt="lachlan cooking">
+        <p>
+
+          Hello, I'm Lachlan.
+
+          This portfolio documents my first semester studying Multimedia Design at KEA. It brings together the projects,
+          experiments and lessons that shaped my understanding of web development, UX/UI design, interface development
+          and content
+          production.
+
+          Each project reflects a different stage of that learning process, from writing my first lines of HTML and CSS
+          to
+          building the portfolio you're currently viewing.
+        </p>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="introduction">
+      <div class="content">
+        <h2>About this portfolio</h2>
+        <p>
+          This portfolio documents the projects completed during my first semester at KEA. Each theme introduced new
+          skills and
+          challenges, from learning the basics of HTML and CSS to working with UX, interface development and content
+          production.
+
+          Rather than only presenting final outcomes, the portfolio also includes parts of the process behind each
+          project,
+          showing how ideas developed through research, testing, design and iteration.
+        </p>
+
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="portfolio_cta">
+      <div class="portfolio_cta_content">
+
+        <h2>Explore My Portfolio</h2>
+        <p>Discover my projects and see how I can help bring your ideas to life.</p>
+        <a href="/portfolio/portfolio.html" class="cta_button">View Portfolio</a>
+      </div>
+    </section>
+
+
+    <div id="footer"></div>
+  </main>
+
+
+  <script>
+
+    fetch("components/header.html")
+
+      .then(res => res.text())
+
+      .then(data => {
+
+        document.getElementById("header").innerHTML = data;
+
+      });
+
+    fetch("components/footer.html")
+
+      .then(res => res.text())
+
+      .then(data => {
+
+        document.getElementById("footer").innerHTML = data;
+
+      });
+
+  </script>
+
+
+</body>
+
+</html>

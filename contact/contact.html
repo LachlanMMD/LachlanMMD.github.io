@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+
+    <link rel="stylesheet" href="/css/mutual_styles.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/puv1dpz.css">
+
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+
+    <main>
+
+        <section class="theme-intro">
+            <div class="container">
+
+                <h1>Contact</h1>
+
+                <p>
+                    Get in touch.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+
+                <h2>Email</h2>
+
+                <p>
+                    lary1000@stud.ek.dk
+                </p>
+
+                <h2>GitHub</h2>
+
+                <p>
+                    github.com/LachlanMMD
+                </p>
+
+                <h2>LinkedIn</h2>
+
+                <p>
+                    https://www.linkedin.com/in/lachlanjamesryan/
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+    <script>
+
+        fetch("/components/header.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+            });
+
+        fetch("../components/footer.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("footer").innerHTML = data;
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_Interface Development</title>
+
+    <link rel="stylesheet" href="/css/mutual_styles.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/puv1dpz.css">
+
+</head>
+
+
+<body>
+
+    <div id="header"></div>
+
+
+
+    <main>
+
+        <section class="theme-intro">
+            <div class="container">
+
+                <h1>
+                    Theme 4' • Brugergrænsefladeudvikling/Portfolie Eksamen
+                </h1>
+
+                <p>
+                    Theme 4 focused on the connection between design and implementation. The theme explored how
+                    interactive interfaces are
+                    built and refined through development.
+
+                    Although I was unable to participate fully due to illness, many of the skills covered in the theme
+                    became relevant later
+                    during the development of this examination portfolio.
+                </p>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <div class="process-gallery">
+
+            <button class="gallery-toggle">
+                View Figma Screenshots
+            </button>
+
+
+
+            <div class="gallery-content hidden">
+
+                <img src="/imgs/imgs_04/04_sitemap.png" alt="">
+                <img src="/imgs/imgs_04/04_checklist-website.png" alt="">
+                <img src="/imgs/imgs_04/04_figma-narrative.png" alt="">
+                <img src="/imgs/imgs_04/04_designprinciples.png" alt="">
+
+            </div>
+
+        </div>
+
+        <section class="challenge">
+            <div class="container">
+
+                <div class="grid_theme">
+
+                    <img src="/imgs/imgs_04/04_moodboard.png" alt="">
+
+                    <div>
+                        <h2>Challenge</h2>
+                        <p>
+                            Theme 4 focused on interface development and the transition from design to
+                            implementation.<br>
+                            Instead of presenting incomplete work, I have used this section to
+                            reflect on how many of the
+                            skills from the theme were applied while building this portfolio.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section class="process">
+            <div class="container">
+
+                <div class="grid_theme">
+
+
+
+                    <div>
+                        <h2>Process</h2>
+                        <p>
+                            I spent more time on the design and planning stages of this portfolio than I have on any of
+                            my previous projects combined, spending the majority of my time creating wireframes,
+                            mockups and prototypes before writing a single line of code. Testing and user interactions
+                            were much more deliberate and structured, helping me strip back a lot of the unnecessary
+                            design elements that I have a tendency to add in my projects.
+                            <br><br>
+                            I had initially planned a much more complex design inspired by Alice in Wonderland, through
+                            the looking glass, but through testing externally and internally, I found that the whimsical
+                            design elements were distracting and made it difficult to navigate the site. I ended up
+                            simplifying the design significantly, focusing on clear typography, a simple color palette
+                            and a straightforward layout.
+                        </p>
+                    </div>
+
+                    <img src="/imgs/imgs_04/04_wireframes-lofi.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="solution">
+            <div class="container">
+
+                <div class="grid_theme">
+
+                    <img src="/imgs/forside.png" alt="">
+
+                    <div>
+                        <h2>Solution</h2>
+                        <p>
+                            The result is the portfolio website you are currently viewing. It brings together the
+                            projects from the semester and
+                            presents them in a single responsive website.
+
+                            The site includes shared navigation components, interactive elements, responsive layouts and
+                            individual pages for each
+                            theme, allowing visitors to explore both the final projects and the work behind them.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="reflection">
+            <div class="container">
+
+                <h2>Reflection</h2>
+
+                <p>
+                    Although I missed most of Theme 4, building this portfolio helped me develop many of the same
+                    technical skills. It also
+                    showed me how much more confident I have become with HTML, CSS and problem solving compared to the
+                    beginning of the
+                    semester.
+
+                    If I were to revisit the original Theme 4 project, I would approach it with a much stronger
+                    understanding of front end
+                    development than I had at the time.
+                </p>
+
+
+            </div>
+        </section>
+        <div class="section-divider"></div>
+
+        <section class="next-project">
+            <p class="theme-label">
+                Theme 5 • Grundlæggende Indhold
+            </p>
+            <a href="theme5.html">Next Project →</a>
+        </section>
+
+        <div id="footer"></div>
+    </main>
+
+    <script src="/js/main.js"></script>
+
+    <script>
+
+        fetch("/components/header.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+            });
+
+        fetch("/components/footer.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("footer").innerHTML = data;
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>

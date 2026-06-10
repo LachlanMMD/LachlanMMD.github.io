@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="/css/mutual_styles.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/puv1dpz.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+
+
+    <main class="container">
+
+        <section class="portfolio-hero">
+
+            <h1>Portfolio</h1>
+
+            <p>
+                A collection of projects documenting my first semester journey through design, UX, content creation and
+                development.
+            </p>
+
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="portfolio-grid">
+
+            <a href="/portfolio/theme2.html" class="theme-card">
+
+                <img src="/imgs/imgs_02/portfolio_dog.png" alt="">
+
+                <div class="theme-card-content">
+
+                    <p class="theme-label">
+                        Theme 2
+                    </p>
+
+                    <h2>Grundlæggende Web</h2>
+
+                    <p>
+                        Learning the foundations of HTML, CSS and responsive design.
+                    </p>
+
+                </div>
+
+            </a>
+
+            <a href="/portfolio/theme3.html" class="theme-card">
+
+                <img src="/imgs/imgs_portfolio/1x/Asset_2.png" alt="">
+
+                <div class="theme-card-content">
+
+                    <p class="theme-label">
+                        Theme 3
+                    </p>
+
+                    <h2>UX/UI Design</h2>
+
+                    <p>
+                        Applying UX methods through research, testing and design.
+                    </p>
+
+                </div>
+
+            </a>
+
+            <a href="/portfolio/theme4.html" class="theme-card">
+
+                <img src="/imgs/imgs_portfolio/Asset_1.png" alt="">
+
+                <div class="theme-card-content">
+
+                    <p class="theme-label">
+                        Theme 4
+                    </p>
+
+                    <h2>Content Creation</h2>
+
+                    <p>
+                        Developing skills in creating engaging and informative content.
+                    </p>
+
+                </div>
+
+            </a>
+
+            <a href="portfolio/theme5.html" class="theme-card">
+
+                <img src="imgs/imgs_portfolio/chimaera-viola.gif" alt="">
+
+                <div class="theme-card-content">
+
+                    <p class="theme-label">
+                        Theme 5
+                    </p>
+
+                    <h2>Grundlæggende Indhold</h2>
+
+                    <p>
+                        Learning the foundations of HTML, CSS and responsive design.
+                    </p>
+
+                </div>
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        fetch("/components/header.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+            });
+
+        fetch("/components/footer.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+                document.getElementById("footer").innerHTML = data;
+
+            });
+
+    </script>
+
+
+
+</body>
+
+</html>
